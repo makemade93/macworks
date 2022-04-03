@@ -1,0 +1,18 @@
+.container {
+  //그리드
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  //스타일
+  margin-top: 40px;
+  max-width: 1280px;
+  background-color: rgba($color: #8a42ff, $alpha: 0.3);
+
+  .image-wide {
+    grid-column: 1 / span 3;
+    margin: 0 auto;
+    height: 418px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #8a42ff;
+  }
+}
