@@ -1,11 +1,12 @@
 /* eslint-disable */
 
-//scss
+// scss
 import "./reset.scss";
 import "./App.scss";
 
-// 컴퍼넌트
+// 페이지
 import San from "./San.js";
+import About from "./About.js";
 
 // 아이콘
 import Arrow from "./icons/folding_arrow.svg";
@@ -29,14 +30,16 @@ function App() {
               <Card />
               <Card />
               <Card />
-              <Card />
-              <Card />
             </div>
           </div>
         </Route>
 
         <Route exact path="/project/01">
           <San />
+        </Route>
+
+        <Route exact path="/about">
+          <About />
         </Route>
       </Switch>
 
@@ -91,9 +94,15 @@ function Navbar() {
         <h3>archive.mackworks</h3>
       </Link>
       <div className="navbar__menu">
-        <a>Project</a>
-        <a>Article</a>
-        <a>Profile</a>
+        <Link as={Link} to="/about">
+          <a>Project</a>
+        </Link>
+        <Link as={Link} to="/about">
+          <a>Article</a>
+        </Link>
+        <Link as={Link} to="/about">
+          <a>About</a>
+        </Link>
       </div>
     </div>
   );

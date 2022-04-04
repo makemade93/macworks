@@ -1,0 +1,18 @@
+//about 페이지에 갭
+.gap-0 {
+  gap: 0px 30px !important;
+}
+
+.border-bottom {
+  padding: 32px;
+  padding-bottom: 0;
+  border-radius: 30px;
+  // background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.project-desc {
+  hr {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}

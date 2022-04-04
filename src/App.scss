@@ -1,10 +1,10 @@
 .App {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -55,8 +55,8 @@
     a {
       font-size: 14px;
       font-weight: regular;
-      padding: 6px 10px;
-      margin-left: 20px;
+      padding: 6px 0;
+      margin-left: 25px;
       border-radius: 8px;
       // background-color: #f3f3f3; 셀렉 상태에서, 마우스 오버 상태에서 나타나게 수정
     }
@@ -70,13 +70,14 @@
   background-color: white;
   border-radius: 30px;
   height: 126px;
-  width: 95%;
+  width: 90%;
   // max-width: 1800px;
   margin-bottom: 30px;
   // flex
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .tag-categories__titles {
     display: flex;
     align-items: center;
@@ -122,12 +123,12 @@
 // 홈 프로젝트 리스트들
 .project-list {
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
   // max-width: 1800px;
   // 그리드 설정
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, minmax(380px, auto));
+  grid-template-rows: repeat(2, minmax(380px, auto));
   gap: 1rem;
 
   // 작은 카드
@@ -163,19 +164,7 @@
       }
     }
   }
-  .card:nth-child(1),
-  .card:nth-child(2),
-  .card:nth-child(3),
-  .card:nth-child(4) {
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)
-      ),
-      url("./images/card_san.png");
-  }
-  .card:nth-child(5) {
+  .card:nth-child(1) {
     background-image: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.6),
@@ -184,26 +173,30 @@
       ),
       url("./images/widecard_skt.png");
     grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
+    grid-row: 1 / span 1;
   }
-  .card:nth-child(6) {
+  .card:nth-child(2) {
     background-image: url("./images/widecard_portfolio.png");
     color: black !important;
     grid-column: 3 / span 2;
-    grid-row: 2 / span 1;
+    grid-row: 1 / span 1;
     .card__text {
       p {
-        color: #2b2e31;
+        color: #5a5a5a;
       }
     }
   }
-  .card:nth-child(7) {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 1;
-  }
-  .card:nth-child(8) {
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 1;
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url("./images/card_san.png");
   }
 }
 
@@ -214,6 +207,6 @@
   align-items: center;
   margin-bottom: 31px;
   height: 110px;
-  font-size: 12px;
-  color: #2e2f35;
+  font-size: 15px;
+  color: #5a5a5a8a;
 }

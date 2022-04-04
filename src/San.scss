@@ -1,11 +1,26 @@
+//컬럼설정
+.column3 {
+  grid-column: 1 / span 3 !important;
+}
+
+.divider {
+  width: 100vw;
+  height: 10px;
+  background-color: #f4f3f4;
+  margin-top: 80px;
+}
+
 .container {
   //그리드
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 30px;
   //스타일
-  margin-top: 40px;
+  margin-top: 80px;
+  width: 100%;
   max-width: 1280px;
-  background-color: rgba($color: #8a42ff, $alpha: 0.3);
+  //text-align
+  text-align: left;
 
   .image-wide {
     grid-column: 1 / span 3;
@@ -13,6 +28,86 @@
     height: 418px;
     width: 100%;
     border-radius: 30px;
-    background-color: #8a42ff;
+    background-image: url("./images/san01.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .project-title {
+    h3 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 2px;
+    }
+    .project__tags {
+      display: flex;
+      .tag {
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .project-desc {
+    grid-column: 2 / span 2;
+    padding-right: 80px;
+    margin-bottom: 20px;
+    h5 {
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: #5a5a5a;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      white-space: pre-line;
+      color: #5a5a5a;
+    }
+  }
+
+  .image-small {
+    border-radius: 30px;
+    height: 217px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-big {
+    grid-column: 1 / span 3;
+    height: 768px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+  }
+
+  .tag-categories {
+    width: 100% !important;
+  }
+
+  //img 배경 설정
+  .img2 {
+    background-image: url("./images/san02.png");
+  }
+  .img3 {
+    background-image: url("./images/san03.png");
+  }
+  .img4 {
+    background-image: url("./images/san04.png");
+  }
+  .img5 {
+    background-image: url("./images/san05.png");
+  }
+  .img6 {
+    background-image: url("./images/san06.png");
+  }
+  .img7 {
+    background-image: url("./images/san07.png");
   }
 }
