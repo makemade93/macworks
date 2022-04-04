@@ -1,8 +1,8 @@
 /* eslint-disable */
 
 //scss
-import "./San.scss";
-import "./About.scss";
+import "../styles/San.scss";
+import "../styles/About.scss";
 
 function About() {
   return (

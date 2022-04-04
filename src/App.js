@@ -1,15 +1,15 @@
 /* eslint-disable */
 
 // scss
-import "./reset.scss";
-import "./App.scss";
+import "./styles/reset.scss";
+import "./styles/App.scss";
 
 // 페이지
-import San from "./San.js";
-import About from "./About.js";
+import San from "./pages/San.js";
+import About from "./pages/About.js";
 
 // 아이콘
-import Arrow from "./icons/folding_arrow.svg";
+import Arrow from "./assets/icons/folding_arrow.svg";
 
 // 라우터
 import { Link, Route, Switch, useHistory } from "react-router-dom";

@@ -1,10 +1,10 @@
 /* eslint-disable */
 
 //scss
-import "./San.scss";
+import "../styles/San.scss";
 
 // 아이콘
-import Arrow from "./icons/folding_arrow.svg";
+import Arrow from "../assets/icons/folding_arrow.svg";
 
 function San() {
   return (
