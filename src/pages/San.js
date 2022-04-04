@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 //scss
-import "../styles/San.scss";
+import "../styles/Project.scss";
 
 // 아이콘
 import Arrow from "../assets/icons/folding_arrow.svg";
