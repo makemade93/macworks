@@ -1,5 +1,8 @@
+html {
+  background-color: #f5f5f5;
+}
+
 .App {
-  background-color: #f8f8f8;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,7 +14,7 @@
 
 // 태그 디자인
 .tag {
-  margin-left: 4px;
+  margin-left: 5px;
   padding: 2px 12px 0px 12px;
   display: flex;
   justify-content: center;
@@ -63,51 +66,6 @@
   }
 }
 
-// 태그필터
-.tag-categories {
-  //style
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 30px;
-  height: 126px;
-  width: 90%;
-  // max-width: 1800px;
-  margin-bottom: 30px;
-  // flex
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .tag-categories__titles {
-    display: flex;
-    align-items: center;
-    margin-left: 37px;
-    h4 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-right: 8px;
-    }
-    .tag-categories__title__counter {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 5px 10px 3px 10px;
-      background-color: #00a3ff;
-      border-radius: 15px;
-      span {
-        font-size: 18px;
-        color: white;
-        font-weight: bold;
-      }
-    }
-  }
-}
-.tag-categories__icon {
-  margin-right: 37px;
-  width: 16px;
-  height: 8px;
-}
-
 .contents {
   //flex
   display: flex;
@@ -123,6 +81,7 @@
 // 홈 프로젝트 리스트들
 .project-list {
   margin: 0 auto;
+  margin-top: 30px;
   width: 90%;
   // max-width: 1800px;
   // 그리드 설정

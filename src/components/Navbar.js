@@ -10,10 +10,8 @@ function Navbar() {
         <h3>archive.mackworks</h3>
       </Link>
       <div className="navbar__menu">
-        <Link as={Link} to="/about">
-          <a>Project</a>
-        </Link>
-        <Link as={Link} to="/about">
+        <a>Project</a>
+        <Link as={Link} to="/article">
           <a>Article</a>
         </Link>
         <Link as={Link} to="/about">

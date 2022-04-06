@@ -5,17 +5,18 @@ import TagFilter from "../components/TagFilter.js";
 import Card from "../components/Card.js";
 
 //styles
-function Home() {
+
+function Home(props) {
+  //props
+  let projectData = props.projectData;
+
   return (
     <div className="contents">
       <TagFilter />
       <div className="project-list">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {projectData.map((projectData, i) => {
+          return <Card projectData={projectData} key={i} />;
+        })}
       </div>
     </div>
   );

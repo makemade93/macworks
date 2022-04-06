@@ -1,12 +1,18 @@
 /* eslint-disable */
 
+//ReactHook
+import React, { useState } from "react";
+
 //scss
 import "../styles/Project.scss";
 
 // 아이콘
 import Arrow from "../assets/icons/folding_arrow.svg";
 
-function San() {
+function San(props) {
+  //props
+  let [modal, changeModal] = useState(false);
+
   return (
     <div className="contents">
       <div className="container">
@@ -28,7 +34,7 @@ function San() {
         <div className="image-small img4"></div>
       </div>
 
-      <div className="divider"></div>
+      {/*<div className="divider"></div>*/}
 
       <div className="container">
         <div className="project-title">
@@ -42,7 +48,15 @@ function San() {
         <div className="image-big img5"></div>
         <div className="image-big img6"></div>
         <div className="image-big img7"></div>
-        <More />
+        <div
+          className="column3"
+          onClick={() => {
+            changeModal(!modal);
+          }}
+        >
+          <More />
+        </div>
+        {modal === true ? <p>"modal ON"</p> : null}
       </div>
     </div>
   );
@@ -50,12 +64,9 @@ function San() {
 
 function More() {
   return (
-    <div className="tag-categories column3">
+    <div className="tag-categories">
       <div className="tag-categories__titles">
         <h4>Read Project Detail</h4>
-        <div className="tag-categories__title__counter">
-          <span>15{/*갯수 표시*/}</span>
-        </div>
       </div>
       <img className="tag-categories__icon" src={Arrow}>
         {/*폴드 아이콘*/}

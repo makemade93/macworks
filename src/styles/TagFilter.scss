@@ -1,0 +1,58 @@
+// 태그필터
+.tag-categories {
+  //style
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 30px;
+  height: 126px;
+  width: 90%;
+  // max-width: 1800px;
+  // flex
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .tag-categories__titles {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .tag-categories__title__counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px 3px 10px;
+      background-color: #00a3ff;
+      border-radius: 15px;
+      span {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.tag-categories__icon {
+  margin-right: 37px;
+  width: 16px;
+  height: 8px;
+}
+
+.tagFilter__tags {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 37px;
+}
+
+.tag-categories-on_Top {
+  border-radius: 30px 30px 0 0;
+}
+
+.tag-categories-on_bottom {
+  background-color: #fafafa;
+  border-radius: 0 0 30px 30px;
+}
