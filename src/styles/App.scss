@@ -75,7 +75,7 @@ html {
   //style
   padding: 31px;
   margin-top: 40px;
-  max-width: 1280px;
+  max-width: 90%;
 }
 
 // 홈 프로젝트 리스트들
@@ -87,7 +87,8 @@ html {
   // 그리드 설정
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, minmax(380px, auto));
+  grid-template-rows: repeat(2, minmax(27vw, auto));
+  // 초 대형화면에서는 (4k 와이드 디스플레이 20vw가 되어야 좋을 듯 하다.)
   gap: 1rem;
 
   // 작은 카드

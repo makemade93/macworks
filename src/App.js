@@ -43,7 +43,7 @@ function App() {
         </Route>
 
         <Route exact path="/article">
-          <Article articleData={articleData} />
+          <Article projectData={articleData} />
         </Route>
       </Switch>
 

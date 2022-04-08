@@ -8,13 +8,15 @@ import Card from "../components/Card.js";
 
 function Article(props) {
   //props
-  let articleData = props.articleData;
+  let projectData = props.projectData;
 
   return (
     <div className="contents">
-      {articleData.map((articleData, i) => {
-        return <Card projectData={articleData} key={i} />;
-      })}
+      <div className="project-list">
+        {projectData.map((projectData, i) => {
+          return <Card projectData={projectData} key={i} />;
+        })}
+      </div>
     </div>
   );
 }
