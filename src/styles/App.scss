@@ -7,65 +7,9 @@ html {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100vw;
   margin: 0;
   padding: 0;
 }
-
-// 태그 디자인
-.tag {
-  margin-left: 5px;
-  padding: 2px 12px 0px 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  height: 28px;
-  border-radius: 15px;
-}
-.tag_year {
-  background-color: #dcdcdc;
-  color: #a5a5a5;
-}
-.tag_brand {
-  background-color: #035381;
-  color: #e1c9ff;
-}
-
-// 네비게이션
-.navbar {
-  // style
-  background-color: white;
-  height: 40px;
-  width: 100vw;
-  position: fixed;
-  // flex
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    h3 {
-      padding-left: 30px;
-      font-size: 16px;
-      font-weight: bold;
-      color: black;
-    }
-  }
-
-  .navbar__menu {
-    padding-right: 30px;
-    a {
-      font-size: 14px;
-      font-weight: regular;
-      padding: 6px 0;
-      margin-left: 25px;
-      border-radius: 8px;
-      // background-color: #f3f3f3; 셀렉 상태에서, 마우스 오버 상태에서 나타나게 수정
-    }
-  }
-}
-
 .contents {
   //flex
   display: flex;
@@ -78,88 +22,6 @@ html {
   max-width: 90%;
 }
 
-// 홈 프로젝트 리스트들
-.project-list {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 90%;
-  // max-width: 1800px;
-  // 그리드 설정
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, minmax(27vw, auto));
-  // 초 대형화면에서는 (4k 와이드 디스플레이 20vw가 되어야 좋을 듯 하다.)
-  gap: 1rem;
-
-  // 작은 카드
-  .card {
-    // 카드디자인
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-size: cover;
-    background-position: center;
-    // max-width: 278px;
-    background-color: black;
-    border-radius: 30px;
-    padding: 16px;
-    //내부 컨텐츠 디자인
-    color: white;
-    .card__tags {
-      display: flex;
-      justify-content: flex-end;
-    }
-    .card__text {
-      text-align: left;
-      margin: 10px;
-      h4 {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 12px;
-      }
-      p {
-        font-size: 20px;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.7);
-      }
-    }
-  }
-  .card:nth-child(1) {
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)
-      ),
-      url("../assets/images/widecard_skt.png");
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
-  }
-  .card:nth-child(2) {
-    background-image: url("../assets/images/widecard_portfolio.png");
-    color: black !important;
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 1;
-    .card__text {
-      p {
-        color: #5a5a5a;
-      }
-    }
-  }
-  .card:nth-child(3),
-  .card:nth-child(4),
-  .card:nth-child(5),
-  .card:nth-child(6) {
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)
-      ),
-      url("../assets/images/card_san.png");
-  }
-}
-
 // 푸터
 .footer {
   display: flex;
@@ -169,4 +31,29 @@ html {
   height: 110px;
   font-size: 15px;
   color: #5a5a5a8a;
+}
+
+@media screen and (min-width: 600px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .contents {
+    //flex
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    //style
+    padding: 15px;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
 }

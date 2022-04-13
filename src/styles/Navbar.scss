@@ -1,0 +1,89 @@
+// 네비게이션
+.navbar {
+  // style
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  // flex
+  display: flex;
+  position: relative;
+  align-items: center;
+  a {
+    h3 {
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      padding: 6px;
+      border-radius: 8px;
+    }
+    h3:hover {
+      //background-color: black;
+      //color: white;
+      background-color: rgba($color: #171717, $alpha: 0.05);
+    }
+  }
+
+  .navbar__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 280px;
+    margin-right: 22px;
+    .navbar__a {
+      font-size: 14px;
+      font-weight: regular;
+      padding: 6px 8px;
+      border-radius: 8px;
+      // background-color: #f3f3f3; 셀렉 상태에서, 마우스 오버 상태에서 나타나게 수정
+    }
+    .navbar__a:hover {
+      background-color: rgba($color: #171717, $alpha: 0.05);
+    }
+  }
+}
+
+.navbar__mobile_menu,
+.nave__mobile_menu__line1,
+.nave__mobile_menu__line2 {
+  display: none;
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .navbar__mobile {
+    position: absolute;
+    right: 0;
+  }
+  .navbar__mobile_menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    margin-right: 13px;
+  }
+  .navbar__mobile_menu:hover {
+    background-color: rgba($color: #000000, $alpha: 0.05);
+  }
+
+  .navbar__mobile_menu__lineOn {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .navbar__mobile_menu__lineOn:first-child {
+    top: 16px;
+    left: 13px;
+  }
+  .navbar__mobile_menu__lineOn:nth-child(2) {
+    bottom: 16px;
+    left: 13px;
+  }
+}

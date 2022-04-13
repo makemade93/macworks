@@ -1,0 +1,27 @@
+.project-list {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  // max-width: 1800px;
+  // 그리드 설정
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(27vw, auto));
+  // 초 대형화면에서는 (4k 와이드 디스플레이 20vw가 되어야 좋을 듯 하다.)
+  gap: 1rem;
+}
+
+// 타블렛
+@media screen and (max-width: 960px) {
+  .project-list {
+    grid-template-rows: repeat(4, minmax(45vw, auto));
+  }
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .project-list {
+    gap: 1rem;
+    grid-template-rows: repeat(6, minmax(70vw, auto));
+  }
+}

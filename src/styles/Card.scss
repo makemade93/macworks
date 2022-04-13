@@ -1,0 +1,97 @@
+.card {
+  // 카드디자인
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  // max-width: 278px;
+  background-color: black;
+  border-radius: 30px;
+  padding: 16px;
+  //내부 컨텐츠 디자인
+  color: white;
+  .card__tags {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card__text {
+    text-align: left;
+    margin: 10px;
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.card:nth-child(1) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../assets/images/widecard_skt.png");
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+.card:nth-child(2) {
+  background-image: url("../assets/images/widecard_portfolio.png");
+  color: black !important;
+  background-color: white;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+  .card__text {
+    p {
+      color: #5a5a5a;
+    }
+  }
+}
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5),
+.card:nth-child(6) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../assets/images/card_san.png");
+}
+
+// 타블렛
+@media screen and (max-width: 960px) {
+  .card:nth-child(1) {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+  }
+  .card:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  }
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    grid-column: span 2;
+  }
+}
+
+// 타블렛
+@media screen and (max-width: 599px) {
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    grid-column: span 4;
+  }
+}

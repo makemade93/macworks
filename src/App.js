@@ -17,6 +17,10 @@ import Article from "./pages/Article.js";
 // Scss
 import "./styles/reset.scss";
 import "./styles/App.scss";
+import "./styles/Tag.scss";
+import "./styles/Card.scss";
+import "./styles/Home.scss";
+import "./styles/Navbar.scss";
 
 // Props
 import projectData from "./projectData.js";
