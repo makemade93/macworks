@@ -6,7 +6,7 @@
   // 그리드 설정
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, minmax(27vw, auto));
+  grid-template-rows: repeat(4, minmax(22vw, 29vw));
   // 초 대형화면에서는 (4k 와이드 디스플레이 20vw가 되어야 좋을 듯 하다.)
   gap: 1rem;
 }
@@ -21,7 +21,7 @@
 // 모바일
 @media screen and (max-width: 599px) {
   .project-list {
-    gap: 1rem;
-    grid-template-rows: repeat(6, minmax(70vw, auto));
+    gap: 1.5rem;
+    grid-template-rows: repeat(6, minmax(110vw, auto));
   }
 }

@@ -13,9 +13,7 @@ function Article(props) {
   return (
     <div className="contents">
       <div className="project-list">
-        {projectData.map((projectData, i) => {
-          return <Card projectData={projectData} key={i} />;
-        })}
+        <h1>ARTICLE PAGE</h1>
       </div>
     </div>
   );

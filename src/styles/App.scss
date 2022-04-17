@@ -4,9 +4,9 @@ html {
 
 .App {
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ html {
   //style
   padding: 31px;
   margin-top: 40px;
-  max-width: 90%;
+  max-width: 1800px;
 }
 
 // 푸터

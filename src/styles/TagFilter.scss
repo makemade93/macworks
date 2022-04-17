@@ -45,7 +45,7 @@
 .tagFilter__tags {
   display: flex;
   justify-content: flex-end;
-  margin-left: 37px;
+  padding-left: 30px;
 }
 
 .tag-categories-on_Top {
@@ -55,4 +55,15 @@
 .tag-categories-on_bottom {
   background-color: #fafafa;
   border-radius: 0 0 30px 30px;
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .tagFilter__tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    flex-wrap: wrap;
+  }
 }

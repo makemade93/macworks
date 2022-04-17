@@ -6,7 +6,7 @@
 .divider {
   width: 100vw;
   height: 10px;
-  background-color: #f4f3f4;
+  background-color: #e8e8e85b;
   margin-top: 80px;
 }
 
@@ -109,5 +109,39 @@
   }
   .img7 {
     background-image: url("../assets/images/san07.png");
+  }
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .project-mobile-contents {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .project-title,
+  .project-desc {
+    margin: 0 0 0 32px;
+  }
+
+  .project-title {
+    margin-top: 30px !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 40px;
+    gap: 20px 30px;
+  }
+  .image-wide {
+    border-radius: 0 !important;
+  }
+  .image-small {
+    margin: 0 14px;
+    height: 50vw !important;
+  }
+  .image-big {
+    margin: 0 14px;
+    height: 80vw !important;
   }
 }

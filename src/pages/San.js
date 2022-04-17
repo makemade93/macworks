@@ -14,7 +14,7 @@ function San(props) {
   let [modal, changeModal] = useState(false);
 
   return (
-    <div className="contents">
+    <div className="contents project-mobile-contents">
       <div className="container">
         <div className="image-wide">{/* big image */}</div>
         <div className="project-title">

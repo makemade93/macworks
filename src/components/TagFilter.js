@@ -61,7 +61,6 @@ function TagFilterOn() {
           <div className="tag tag_year">2020</div>
           <div className="tag tag_brand">brand</div>
           <div className="tag tag_year">2020</div>
-          <div className="tag tag_brand">brand</div>
         </div>
       </div>
     </div>

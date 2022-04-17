@@ -1,5 +1,5 @@
-.about-padding-30 {
-  padding-left: 30px !important;
+.about-padding-40 {
+  padding-left: 40px !important;
 }
 
 // about 페이지에 갭
@@ -19,5 +19,16 @@
   hr {
     margin-top: 30px;
     margin-bottom: 0;
+  }
+}
+
+// 모바일
+@media screen and (max-width: 599px) {
+  .about-padding-40 {
+    padding-left: 0 !important;
+  }
+  .border-bottom {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }

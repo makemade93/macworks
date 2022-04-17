@@ -1,13 +1,12 @@
 /* eslint-disable */
 
 // 라우터
-import { Link, Route, Switch, useHistory } from "react-router-dom";
-
+import { Link, Redirect, Route, Switch, useHistory } from "react-router-dom";
 // Scss
 
 function Card(props) {
   let history = useHistory();
-
+  const cardBgUrl = [];
   return (
     <div
       className="card"
